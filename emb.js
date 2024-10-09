@@ -35,4 +35,4 @@ setTimeout(()=>{window.location = "https://classroom.google.com"},5*60*60*1000)
 window.onblur = function () {
     window.location = "https://classroom.google.com";
 };
-sessionStorage.setItem("_krbr", "1")
+window._krbr = 1
