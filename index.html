@@ -5,7 +5,7 @@
   </head>
 <body></body>
 <script>setTimeout(()=>{
-    if(sessionStorage.getItem("_krbr") != 1){
+    if(!sessionStorage.getItem("_krbr")){
         window.location.href = "/krbr/f?f="+btoa(window.location.href);
     }
 },1000);</script>
