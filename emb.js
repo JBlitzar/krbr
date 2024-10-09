@@ -1,4 +1,3 @@
-sessionStorage.setItem("_krbr", btoa(window.location.href))
 setTimeout(() => {
     for(var i=0;i<100;i++){
       window.history.pushState(
@@ -31,7 +30,8 @@ setTimeout(() => {
   });
 });
 
-  setTimeout(()=>{window.location = "https://classroom.google.com"},5*60*60*1000)
-  window.onblur = function () {
-     window.location = "https://classroom.google.com";
-  };
+setTimeout(()=>{window.location = "https://classroom.google.com"},5*60*60*1000)
+window.onblur = function () {
+    window.location = "https://classroom.google.com";
+};
+sessionStorage.setItem("_krbr", btoa(window.location.href))
