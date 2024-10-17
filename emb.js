@@ -9,13 +9,13 @@ link.href = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hA
 document.title = "Home"
 setTimeout(() => {
     const h = btoa(window.location.href)
-    for(var i=0;i<100;i++){
-      window.history.pushState(
-      null,
-      document.title,
-      "/krbr/f?f="+h
-    );
-    }
+    // for(var i=0;i<100;i++){
+    //   window.history.pushState(
+    //   null,
+    //   document.title,
+    //   "/krbr/f?f="+h
+    // );
+    // }
     window.history.replaceState(
       null,
       document.title,
